@@ -1,0 +1,16 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+#keyboard {
+    border: 4px solid white;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    padding: auto;
+}

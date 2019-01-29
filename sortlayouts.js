@@ -29,10 +29,10 @@ function sort_ff(desired){
   ];
   let importance = {
     "esc" : 2,
-    "alpha" : 3,
+    "alpha" : 5,
     "caps" : 1,
     "numpad" : 2,
-    "topnum" : 2,
+    "topnum" : 4,
     "function" : 1,
     "function2" : 1,
     "l_ctrl" : 0.25,

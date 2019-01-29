@@ -11,6 +11,15 @@ arrow: arrows
 function: F1-F12
 function2: buttons above the arrows in a fullsized/tkl keyboard (insert, page down, etc)
 numpad: number pads on the very right side of fullsized keyboard
+
+format
+----
+[Device Name,
+  [properties],
+  example pcb,
+  example image,
+  "Source: "image source
+]
 */
 
 function return_ff(desired){

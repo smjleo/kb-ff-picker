@@ -1,0 +1,11 @@
+{
+  "name": "kb-ff-picker",
+  "version": "1.0.0",
+  "description": "Making the complicated world of custom mechanical keyboards just a tad easier.",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}

@@ -17,46 +17,53 @@ body {
 
 .key {
     border-radius: 17%;
-    height: 5em;
-    max-height: 5em;
+    height: 4vw;
     margin: auto 0 auto 0;
     text-align: center;
     background-color: white;
     border: 1px solid black;
+    padding: 0;
 }
 
 .key > div {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.key > p {
+    margin: 0;
 }
 
 .gap {
     display: inline-block;
     margin: 0 auto 0 auto;
 }
-
+¯
 .w-1 {
-    width: 1.25em; 
+    width: 1vw; 
 }
 
 .w-4 {
-    width: 5em;
+    width: 4vw;
 }
 
 .w-6 {
     border-radius: calc(17%*(4/6))/17%;
-    width: 7.5em;
+    width: 6vw;
 }
 
 .w-7 {
     border-radius: calc(17%*(4/7))/17%;
-    width: 8.75em;
+    width: 7vw;
 }
 
 .w-8 {
     border-radius: calc(17%*(4/8))/17%;
-    width: 10em;
+    width: 8vw;
 }
 
 .w-9 {
     border-radius: calc(17%*(4/9))/17%;
-    width: 11.25em;
+    width: 9vw;
 }

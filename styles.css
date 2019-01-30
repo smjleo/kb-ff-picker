@@ -8,11 +8,24 @@ body {
     
 }
 
-/* 1em = 4 keyboard spaces */
+/* 5em = 4 keyboard spaces */
+
+.line {
+    max-height: 5em;
+    padding-top: auto;
+}
+
 .key {
-    border-radius: 20%;
+    border-radius: 17%;
     height: 5em;
-    margin: 0;
+    max-height: 5em;
+    margin: auto 0 auto 0;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.key > div {
 }
 
 .gap {
@@ -29,13 +42,21 @@ body {
 }
 
 .w-6 {
+    border-radius: calc(17%*(4/6))/17%;
     width: 7.5em;
 }
 
+.w-7 {
+    border-radius: calc(17%*(4/7))/17%;
+    width: 8.75em;
+}
+
 .w-8 {
+    border-radius: calc(17%*(4/8))/17%;
     width: 10em;
 }
 
-.key > .div {
-    line-height: 8px;
+.w-9 {
+    border-radius: calc(17%*(4/9))/17%;
+    width: 11.25em;
 }

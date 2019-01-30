@@ -18,7 +18,6 @@ format
   [properties],
   example pcb,
   example image,
-  "Source: "image source
 ]
 */
 
@@ -27,76 +26,65 @@ function return_ff(desired){
     ["numpad"],
     0,
     "XD24",
-    "https://ae01.alicdn.com/kf/HTB1vNOlXeKAUKJjSZFzq6xdQFXaL/satan-pad-kc21-numpad-21key-Custom-Mechanical-Keyboard-keys-Underglow-RGB-PCB-plastic-case-plate-function.jpg_640x640.jpg",
-    "Image Source: KPRepublic"
+    "/images/numpad.png"
   ],
   ["40%",
     ["esc", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
     0,
     "Vortex Core",
-    "https://images-na.ssl-images-amazon.com/images/I/61asoWloPUL._SX355_.jpg",
-    "Source: Amazon"
+    "/images/40.png"
   ],
   ["60%",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
     0,
     "GH60, DZ60, XD60",
-    "https://mechanicalkeyboards.com/shop/images/products/large_1237_IMG_0984.jpg",
-    "Source: mechanicalkeyboards.com"
+    "/images/60.png"
   ],
   ["60% - HHKB",
     ["esc", "topnum", "alpha", "l_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
     0,
     "GH60, DZ60, XD60",
-    "https://cdn.shopify.com/s/files/1/1473/3902/products/2_8197539f-58ba-402b-a2f6-1ad5d3bfc41c_620x.jpg?v=1536248017",
-    "Source: KBDFans"
+    "/images/hhkb.png"
   ],
   ["60% - Winkeyless",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_alt", "r_alt"],
     0,
     "GH60, DZ60, XD60",
-    "https://cdn.shopify.com/s/files/1/1473/3902/products/2.1_1800x1800.jpg?v=1536248062",
-    "Source: KBDFans"
+    "/images/winkeyless.png"
   ],
   ["64%",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow"],
     0,
     "XD60 (XD64)",
-    "https://massdrop-s3.imgix.net/product-images/gh60-xd64-mechanical-keyboard-kit/363A1304%20copy_20170505114428.jpg?auto=format&fm=jpg&fit=crop&w=955&bg=f0f0f0&dpr=1",
-    "Source: Massdrop"
+    "/images/64.png"
   ],
   ["68%",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2"],
     0,
     "Tada68",
-    "https://cdn.shopify.com/s/files/1/1473/3902/products/2_40c81ba2-7709-46c5-a61c-a550749a4e98_620x.jpg?v=1536245651",
-    "Source: KBDFans"],
+    "/images/68.png"
   ["75%",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
     0,
     "Vortex Race",
-    "https://mechanicalkeyboards.com/shop/images/products/large_2668_large_2446_Race3_2.jpg",
-    "Source: mechanicalkeyboards.com"
+    "/images/75.png"
   ],
   ["Tenkeyless",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
     0,
     "GMMK TKL",
-    "https://cdn.shopify.com/s/files/1/0549/2681/products/mechanical-keyboard-the-glorious-gmmk-3_a2981c7e-108d-45c3-9fdf-fd4c47d8eca8.jpg?v=1540489214",
-    "Source: Glorious PC Gaming Race"
+    "/images/tkl.png"
   ],
   ["1800",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"],
     0,
-    "https://cdn.shopify.com/s/files/1/1473/3902/products/11_2ef1840c-d0bf-4826-bbc0-b2f6a82471bb_1800x1800.jpg?v=1536242910",
-    "Source: KBDFans"
+    "/images/1800.png"
   ],
   ["Fullsized",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"],
     0,
     "GMMK Fullsized",
-    "https://cdn.shopify.com/s/files/1/0549/2681/products/aura_full_f1d87a2d-8096-4d76-b5f5-fa002bfaa1b6.jpg?v=1540489059",
-    "Source: Glorious PC Gaming Race"
+    "/images/fullsized.png"
   ]];
   let importance = {
     "esc" : 2,

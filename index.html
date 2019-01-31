@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Keyboard Form Factor Picker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,16 +16,20 @@
             <button class="key w-4 function">F2</button>
             <button class="key w-4 function">F3</button>
             <button class="key w-4 function">F4</button>
-            <div class="w-2 gap"></div>
+            <div class="gap" style="width: 1.75vw;"></div>
             <button class="key w-4 function">F5</button>
             <button class="key w-4 function">F6</button>
             <button class="key w-4 function">F7</button>
             <button class="key w-4 function">F8</button>
-            <div class="w-2 gap"></div>
+            <div class="gap" style="width: 1.75vw;"></div>
             <button class="key w-4 function">F9</button>
             <button class="key w-4 function">F10</button>
             <button class="key w-4 function">F11</button>
             <button class="key w-4 function">F12</button>
+            <div class="gap w-1"></div>
+            <button class="key w-4 function2">PrtSc</button>
+            <button class="key w-4 function2">Scroll Lock</button>
+            <button class="key w-4 function2">Pause Break</button>
         </div>
         <div class="line">
             <button class="key w-4 topnum"><div>~</div><div>`</div></button>
@@ -42,6 +46,15 @@
             <button class="key w-4 topnum"><div>_</div><div>-</div></button>
             <button class="key w-4 topnum"><div>+</div><div>=</div></button>
             <button class="key w-8 topnum">Backspace</button>
+            <div class="gap w-1"></div>
+            <button class="key w-4 function2">Insert</button>
+            <button class="key w-4 function2">Home</button>
+            <button class="key w-4 function2">PageUp</button>
+            <div class="gap w-1"></div>
+            <button class="key w-4 numpad">Num Lock</button>
+            <button class="key w-4 numpad">/</button>
+            <button class="key w-4 numpad">*</button>
+            <button class="key w-4 numpad">-</button>
         </div>
         <div class="line">
             <button class="key w-6 alpha">Tab</button>
@@ -57,7 +70,15 @@
             <button class="key w-4 alpha">P</button>
             <button class="key w-4 alpha"><div>{</div><div>[</div></button>
             <button class="key w-4 alpha"><div>}</div><div>]</div></button>
-            <button class="key w-4 alpha"><div>|</div><div>\</div></button>
+            <button class="key w-6 alpha"><div>|</div><div>\</div></button>
+            <div class="gap w-1"></div>
+            <button class="key w-4 function2">Delete</button>
+            <button class="key w-4 function2">End</button>
+            <button class="key w-4 function2">PageDn</button>
+            <div class="gap w-1"></div>
+            <button class="key w-4 numpad"><div>7</div><div>Home</div></button>
+            <button class="key w-4 numpad"><div>8</div><div>↑</div></button>
+            <button class="key w-4 numpad"><div>9</div><div>PageUp</div></button>
         </div>
         <div class="line">
             <button class="key w-7 alpha">Caps Lock</button>
@@ -72,7 +93,11 @@
             <button class="key w-4 alpha">L</button>
             <button class="key w-4 alpha"><div>:</div><div>;</div></button>
             <button class="key w-4 alpha"><div>"</div><div>'</div></button>
-            <button class="key w-9 alpha">Enter</button>
+            <button class="key alpha enter">Enter</button>
+            <div class="gap w-13"></div>
+            <button class="key w-4 numpad"><div>4</div><div>←</div></button>
+            <button class="key w-4 numpad"><div>5</div><div></div></button>
+            <button class="key w-4 numpad"><div>6</div><div>→</div></button>
         </div>
         <div class="line">
             <button class="key w-8 alpha">Shift</button>
@@ -86,7 +111,23 @@
             <button class="key w-4 alpha"><div>&lt;</div><div>,</div></button>
             <button class="key w-4 alpha"><div>&gt;</div><div>.</div></button>
             <button class="key w-4 alpha"><div>?</div><div>/</div></button>
-            <button class="key w-10 alpha">Shift</button>
+            <button class="key r_shift alpha">Shift</button>
+            <div class="gap w-4"></div>
+            <button class="key w-4 arrow">↑</button>
+            <div class="gap w-4"></div>
+            <button class="key w-4 numpad"><div>1</div><div>End</div></button>
+            <button class="key w-4 numpad"><div>2</div><div>↓</div></button>
+            <button class="key w-4 numpad"><div>3</div><div>PageDn</div></button>
+        </div>
+        <div class="line">
+            <button class="key w-5 l_ctrl">Ctrl</button>
+            <button class="key w-5 l_os">Win</button>
+            <button class="key w-5 l_alt">Alt</button>
+            <button class="key space w-25">Space</button>
+            <button class="key w-5 r_alt">Alt</button>
+            <button class="key w-5 r_os">Win</button>
+            <button class="key w-5">Menu</button>
+            <button class="key w-5 r_ctrl">Ctrl</button>
         </div>
     </div>
 </body>

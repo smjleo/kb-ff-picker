@@ -1,121 +1,65 @@
 body {
-    background-color: #000000;
-    color: white;
+    background-color: #e56438;
 }
 
-#keyboard {
-    border: 4px solid white;
-    width: auto;
-}
 
-/* 5em = 4 keyboard spaces */
-
-.line {
-    max-height: 5em;
-    width: auto;
-}
 
 .key {
-    border-radius: 17%;
-    height: 4vw;
-    margin: auto 0 auto 0;
-    text-align: center;
     background-color: white;
+    border-radius: 17%;
+    height: 3vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1vw;
+    font-family: sans-serif;
     font-size: 1vw;
-    border: 1px solid black;
-    padding: 0;
-    font-size: 1vw;
+    opacity: 0.7;
     display: inline-block;
-}
-
-.key::before {
-    clear: both;
-    content: "";
-  display: table;
-  margin-top: -1px;
-  height: 0;
-}
-
-.key > div {
     margin: 0;
+    overflow: hidden;
     flex-direction: column;
-    padding: 0;
 }
 
-.key > p {
-    margin: 0;
+
+.line {
+    margin: 5px 0 5px 0;
 }
+
 
 .gap {
     display: inline-block;
-    margin: 0 auto 0 auto;
-}
-¯
-.w-1 {
-    width: 1vw; 
+    border: 1px solid transparent;
 }
 
+.w-_25 {
+    width: 0.75vw;
+}
+
+.w-_5 {
+    width: 1.5vw;
+}
+
+.w-1 {
+    width: 3vw;
+}
+
+.w-1_5 {
+    width: 4.5vw;
+    border-radius: calc(17%/1.5)/17%;
+}
+
+.w-1_75 {
+    width: 5.25vw;
+    border-radius: calc(17%/1.75)/17%;
+}
 
 .w-2 {
-    width: 2vw;
-}
-
-.w-4 {
-    width: 4vw;
-}
-
-.w-5 {
-    border-radius: calc(17%*(4/5))/17%;
-    width: 5vw;
-}
-
-.w-6 {
-    border-radius: calc(17%*(4/6))/17%;
     width: 6vw;
+    border-radius: calc(17%/2)/17%;
 }
 
-.w-7 {
-    border-radius: calc(17%*(4/7))/17%;
-    width: 7vw;
+.w-2_25 {
+    width: 6.75vw;
+    border-radius: calc(17%/2.25)/17%;
 }
 
-.w-8 {
-    border-radius: calc(17%*(4/8))/17%;
-    width: 8vw;
-}
-
-.w-9 {
-    border-radius: calc(17%*(4/9))/17%;
-    width: 9vw;
-}
-
-.w-10 {
-    border-radius: calc(17%*(4/10))/17%;
-    width: 10vw;
-}
-
-.w-12 {
-    border-radius: calc(17%*(4/12))/17%;
-    width: 12vw;
-}
-
-
-.w-13 {
-    border-radius: calc(17%*(4/13))/17%;
-    width: 13vw;
-}
-
-.space {
-    border-radius: calc(17%*(4/26.5))/17%;
-    width: 26.5vw;
-}
-
-.r_shift {
-    border-radius: calc(17%*(4/12.5))/17%;
-    width: 12.5vw;
-}
-
-.enter {
-    border-radius: calc(17%*(4/9.25))/17%;
-    width: 9.25vw;
-}

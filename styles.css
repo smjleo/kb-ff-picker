@@ -17,6 +17,7 @@ body {
     margin: 0;
     overflow: hidden;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .key > p {
@@ -46,6 +47,11 @@ body {
     width: 3vw;
 }
 
+.w-1_25 {
+    width: 3.75vw;
+    border-radius: calc(17%/1.25)/17%;
+}
+
 .w-1_5 {
     width: 4.5vw;
     border-radius: calc(17%/1.5)/17%;
@@ -69,4 +75,9 @@ body {
 .w-2_75 {
     width: 8.25vw;
     border-radius: calc(17%/2.75)/17%;
+}
+
+.w-6_25 {
+    width: 18.75vw;
+    border-radius: calc(17%/6.25)/17%;
 }

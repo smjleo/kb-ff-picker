@@ -63,6 +63,7 @@ function return_ff(desired){
     0,
     "Tada68",
     "/images/68.png"
+  ],
   ["75%",
     ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
     0,
@@ -92,7 +93,7 @@ function return_ff(desired){
     "caps" : 1,
     "numpad" : 2,
     "topnum" : 4,
-    "function" : 1,key w-1
+    "function" : 1,
     "function2" : 1,
     "l_ctrl" : 0.25,
     "r_ctrl" : 0.25,

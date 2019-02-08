@@ -92,7 +92,7 @@ function return_ff(desired){
     "caps" : 1,
     "numpad" : 2,
     "topnum" : 4,
-    "function" : 1,
+    "function" : 1,key w-1
     "function2" : 1,
     "l_ctrl" : 0.25,
     "r_ctrl" : 0.25,

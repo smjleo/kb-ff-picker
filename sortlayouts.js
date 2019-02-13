@@ -89,7 +89,7 @@ function return_ff(desired) {
     ]];
     let importance = {
         "esc": 2,
-        "alpha": 5,
+        "alpha": 10,
         "caps": 1,
         "numpad": 3,
         "topnum": 4,
@@ -104,6 +104,11 @@ function return_ff(desired) {
         "arrow": 2,
     };
     formfactors.forEach(i => {
+        desired.forEach(j => {
+            if (i[1].indexOf(j) == -1) {
+                i[2] = -99999;
+            }
+        });
         i[1].forEach(j => {
             if (desired.indexOf(j) != -1) {
                 i[2] += importance[j];

@@ -113,5 +113,5 @@ function return_ff(desired) {
         });
     });
     let k = 3; // sensitivity
-    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e>0);
+    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e[2] >= 0);
 }

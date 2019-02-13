@@ -1,4 +1,4 @@
-let groups = ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"];
+let groups = ["menu", "esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"];
 let selected = Array(groups.length).fill(false);
 document.addEventListener("DOMContentLoaded", ()=>{
     groups.forEach((group, i)=>{
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             el.addEventListener("click", ()=>{
                 selected[i] = !selected[i];
                 [...document.getElementsByClassName(group)].forEach(e=>{
-                    e.style.opacity = selected[i] ? 1 : 0.7;
+                    e.style.opacity = selected[i] ? 0.9 : 0.7;
                 });
             });
         })

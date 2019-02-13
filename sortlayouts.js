@@ -36,58 +36,58 @@ function return_ff(desired) {
     ],
     ["60%",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
-        1,
+        0,
         "GH60, DZ60, XD60",
         "images/60.png"
     ],
     ["60% - HHKB",
         ["esc", "topnum", "alpha", "l_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
-        2,
+        0,
         "GH60, DZ60, XD60",
         "images/hhkb.png"
     ],
     ["60% - Winkeyless",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_alt", "r_alt"],
-        2,
+        0,
         "GH60, DZ60, XD60",
         "images/winkeyless.png"
     ],
     ["64%",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow"],
-        3,
+        0,
         "XD60 (XD64)",
         "images/64.png"
     ],
     ["68%",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2"],
-        4,
+        0,
         "Tada68",
         "images/68.png"
     ],
     ["75%",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
-        5,
+        0,
         "Vortex Race",
         "images/75.png"
     ],
     ["Tenkeyless",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
-        6,
+        0,
         "GMMK TKL",
         "images/tkl.png"
     ],
     ["1800",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"],
-        7,
+        0,
         "",
         "images/1800.png"
     ],
     ["Fullsized",
         ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"],
-        8,
+        0,
         "GMMK Fullsized",
         "images/fullsized.png"
-    ]];/*
+    ]];
     let importance = {
         "esc": 2,
         "alpha": 10,
@@ -120,6 +120,4 @@ function return_ff(desired) {
     });
     let k = 3; // sensitivity
     return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e[2] >= -2);
-    */
-   return formfactors.filter(e=>desired.map(x=>e[1].indexOf(x) == -1 ? "" : "1").join("").length == desired.length).sort((a, b)=>a[2] - b[2]).slice(0,3);
 }

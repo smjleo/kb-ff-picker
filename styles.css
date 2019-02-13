@@ -57,6 +57,14 @@ body > h1:last-of-type {
     display: inline-block;
 }
 
+.layout {
+    width: auto;
+}
+
+.layout-image {
+    width: 25vw;
+}
+
 .w-_25 {
     width: 0.75vw;
 }
@@ -67,6 +75,12 @@ body > h1:last-of-type {
 
 .w-1 {
     width: 3vw;
+}
+
+.h-2 {
+    height: 6vw;
+    vertical-align: top;
+    border-radius: 17%/calc(17%/2);
 }
 
 .w-1_25 {

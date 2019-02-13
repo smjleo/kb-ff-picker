@@ -5,9 +5,9 @@ function renderlayouts(desired){
     // actual logic
     return_ff(desired).forEach(e=>{
         let r = Object.assign(document.createElement("div"), {className: "layout"});
-        r.appendChild(Object.assign(document.createElement("h2"), {textContent: e[3]}));
-        r.appendChild(Object.assign(document.createElement("h3"), {textContent: e[0]}));
-        r.appendChild(Object.assign(document.createElement("img"), {src: e[4]}));
+        r.appendChild(Object.assign(document.createElement("h2"), {textContent: e[0]}));
+        r.appendChild(Object.assign(document.createElement("h3"), {textContent: e[3]}));
+        r.appendChild(Object.assign(document.createElement("img"), {src: e[4], className: "layout-image"}));
         layouts.appendChild(r);
     });
     console.log(desired);

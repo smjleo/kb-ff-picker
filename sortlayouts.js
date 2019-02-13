@@ -91,7 +91,7 @@ function return_ff(desired) {
         "esc": 2,
         "alpha": 5,
         "caps": 1,
-        "numpad": 2,
+        "numpad": 3,
         "topnum": 4,
         "function": 1,
         "function2": 1,
@@ -113,5 +113,5 @@ function return_ff(desired) {
         });
     });
     let k = 3; // sensitivity
-    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e[2] >= 0);
+    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e[2] >= -2);
 }

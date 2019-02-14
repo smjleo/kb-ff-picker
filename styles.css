@@ -8,7 +8,7 @@ body {
 
 body > h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-weight: 450;
+    font-weight: 250;
     opacity: 0.85;
 }
 
@@ -42,6 +42,7 @@ body > h1, h2, h3, h4, h5, h6 {
 
 #keyboard {
     margin: 1vh auto 1vh auto;
+    margin-left: 1vh;
     display: inline-block;
     box-sizing: border-box;
     --key-width: 3vw;
@@ -90,10 +91,18 @@ body > h1, h2, h3, h4, h5, h6 {
 
 .layout {
     width: auto;
+    margin-left: 0.5vw;
 }
 
 .layout-image {
     width: 25vw;
+}
+
+.info {
+  margin-left: 1vh;
+  margin-top: -0.5vh;
+  opacity: 0.85;
+  font-size: 17px;
 }
 
 .w-_25 {

@@ -12,6 +12,26 @@ body > h1, h2, h3, h4, h5, h6 {
     opacity: 0.85;
 }
 
+#topbar {
+    flex-direction: row;
+    opacity: 0.85;
+    font-weight: 450;
+    height: 40px;
+    margin-bottom: 1vh;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#credits, #source-code {
+    float: right;
+    margin: 4px 1vw 0 1vw;
+}
+
+#title {
+    float: left;
+    width: auto;
+    margin: auto 5px auto 5px;
+}
 
 #keyboard {
     margin: 1vh auto 1vh auto;
@@ -45,7 +65,7 @@ body > h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     flex-direction: column;
     cursor: pointer;
-    border: 1px solid #bb6c3f;
+    border: 1px solid #ff7043;
     box-sizing: border-box;
 }
 

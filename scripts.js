@@ -5,8 +5,8 @@ function renderlayouts(desired){
     // actual logic
     return_ff(desired).forEach(e=>{
         let r = Object.assign(document.createElement("div"), {className: "layout"});
-        r.appendChild(Object.assign(document.createElement("h2"), {textContent: e[0]}));
-        r.appendChild(Object.assign(document.createElement("h3"), {textContent: e[3]}));
+        r.appendChild(Object.assign(document.createElement("h2"), {textContent: e[0], className: "layout-name"}));
+        r.appendChild(Object.assign(document.createElement("h3"), {textContent: "example pcbs: " + e[3], className: "layout-examples"}));
         r.appendChild(Object.assign(document.createElement("img"), {src: e[4], className: "layout-image"}));
         layouts.appendChild(r);
     });
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 [...document.getElementsByClassName(group)].forEach(e=>{
                     e.style.opacity = selected[i] ? 0.9 : 0.7;
                 });
-                renderlayouts(groups.filter((e, i)=>selected[i]));
+                renderlayouts(groups.filter((e, i)=>selected[i] && e != "menu"));
             });
         })
     })

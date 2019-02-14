@@ -14,12 +14,11 @@ body > h1, h2, h3, h4, h5, h6 {
 
 #topbar {
     flex-direction: row;
-    opacity: 0.85;
-    font-weight: 450;
     height: 40px;
     margin-bottom: 1vh;
     vertical-align: middle;
     text-align: center;
+    
 }
 
 #credits, #source-code {
@@ -27,10 +26,16 @@ body > h1, h2, h3, h4, h5, h6 {
     margin: 4px 1vw 0 1vw;
 }
 
+#credits > a, #source-code {
+    color: white;
+}
+
 #title {
     float: left;
     width: auto;
     margin: auto 5px auto 5px;
+    opacity: 0.85;
+    font-weight: 450;
 }
 
 #keyboard {

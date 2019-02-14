@@ -1,43 +1,80 @@
-
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 body {
-    background-color: #ff7043;
-    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color: white;
+    background-color: #282828;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #eee;
 }
 
 body > h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-weight: 450;
-    opacity: 0.85;
+    opacity: 0.9;
+}
+
+.layout-name, .layout-examples {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+}
+
+.layout-name, .layout-examples, .layout-image {
+    margin-left: 1vw;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
 }
 
 #topbar {
-    flex-direction: row;
-    opacity: 0.85;
-    font-weight: 450;
-    height: 40px;
+    --topbar-height: 6vh;
+    height: var(--topbar-height);
+    width: 98vw;
+    background-color: #222;
     margin-bottom: 1vh;
     vertical-align: middle;
     text-align: center;
+    display: table;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #eee;
 }
 
 #credits, #source-code {
     float: right;
-    margin: 4px 1vw 0 1vw;
+    height: var(--topbar-height);
+    line-height: var(--topbar-height);
+    margin: 0;
+    padding: 0 1vw 0 1vw;
+    transition: 0.2s;
+}
+
+#credits:hover, #source-code:hover {
+    background-color: #333;
+    cursor: pointer;
 }
 
 #title {
     float: left;
-    width: auto;
-    margin: auto 5px auto 5px;
+    height: var(--topbar-height);
+    line-height: var(--topbar-height);
+    font-size: 20pt;
+    margin: 0;
+    color: #eee;
+    
 }
 
 #keyboard {
     margin: 1vh auto 1vh auto;
+    padding: 1vw;
     display: inline-block;
     box-sizing: border-box;
-    --key-width: 3vw;
+    background-color: #333;
+    --key-width: 3.5vw;
+    margin-left: 1vw;
 }
 
 .line {
@@ -47,34 +84,34 @@ body > h1, h2, h3, h4, h5, h6 {
     max-height: var(--key-width);
     width: calc(var(--key-width) * 22.5);
     overflow: visible;
+    border-collapse: collapse;
 }
 
 
 .key {
-    background-color: white;
-    border-radius: 17%;
+    background-image: linear-gradient(to right, #333, #444, #333);
+    /* border-radius: 17%; */
     height: var(--key-width);
     text-align: center;
     vertical-align: middle;
     font-family: -system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: calc((0.9/3) * var(--key-width));
-    color: black;
+    font-size: calc((0.7/3) * var(--key-width));
+    color: #ddd;
     opacity: 0.7;
     display: inline-block;
-    margin: 0;
     overflow: hidden;
-    flex-direction: column;
     cursor: pointer;
-    border: 1px solid #ff7043;
+    border: 5px solid #000;
     box-sizing: border-box;
+    transition: 0.1s;
 }
 
 .key > div {
-    line-height: calc(var(--key-width)/2);
+    line-height: calc(var(--key-width)/2.5);
 }
 
 .key > p {
-    line-height: calc(var(--key-width)/3);
+    line-height: calc(var(--key-width)/3.5);
 }
 
 .gap {
@@ -104,45 +141,45 @@ body > h1, h2, h3, h4, h5, h6 {
 .h-2 {
     height: calc(var(--key-width)*2);
     vertical-align: top;
-    border-radius: 17%/calc(17%/2);
+    /* border-radius: 17%/calc(17%/2); */
 }
 
 .w-1_25 {
     width: calc(var(--key-width)*1.25);
-    border-radius: calc(17%/1.25)/17%;
+    /* border-radius: calc(17%/1.25)/17%; */
 }
 
 .w-1_5 {
     width: calc(var(--key-width)*1.5);
-    border-radius: calc(17%/1.5)/17%;
+    /* border-radius: calc(17%/1.5)/17%; */
 }
 
 .w-1_75 {
     width: calc(var(--key-width)*1.75);
-    border-radius: calc(17%/1.75)/17%;
+    /* border-radius: calc(17%/1.75)/17%; */
 }
 
 .w-2 {
     width: calc(var(--key-width)*2);
-    border-radius: calc(17%/2)/17%;
+    /* border-radius: calc(17%/2)/17%; */
 }
 
 .w-2_25 {
     width: calc(var(--key-width)*2.25);
-    border-radius: calc(17%/2.25)/17%;
+    /* border-radius: calc(17%/2.25)/17%; */
 }
 
 .w-2_75 {
     width: calc(var(--key-width)*2.75);
-    border-radius: calc(17%/2.75)/17%;
+    /* border-radius: calc(17%/2.75)/17%; */
 }
 
 .w-3_5 {
     width: calc(var(--key-width)*3.5);
-    border-radius: calc(17%/3.5)/17%;
+    /* border-radius: calc(17%/3.5)/17%; */
 }
 
 .w-6_25 {
     width: calc(var(--key-width)*6.25);
-    border-radius: calc(17%/6.25)/17%;
+    /* border-radius: calc(17%/6.25)/17%; */
 }

@@ -22,13 +22,13 @@ body > h1, h2, h3, h4, h5, h6 {
 
 }
 
-#credits, #source-code {
+#detailed, #credits, #source-code {
     float: right;
     margin: 4px 1vw 0 1vw;
     opacity: 0.85;
 }
 
-#credits > a, #source-code {
+#detailed, #credits > a, #source-code {
     color: white;
 }
 

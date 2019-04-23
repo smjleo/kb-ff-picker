@@ -1,6 +1,6 @@
 body, html {
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 3.5vh 0 0 0.5vw !important;
 }
 
 body {
@@ -40,12 +40,11 @@ a {
 #topbar {
     --topbar-height: 6vh;
     height: var(--topbar-height);
-    width: 98vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; 
     background-color: #222;
-    margin-bottom: 1vh;
-    vertical-align: middle;
-    text-align: center;
-    display: table;
     padding-left: 1vw;
     padding-right: 1vw;
     color: #eee;
@@ -90,39 +89,46 @@ a {
 
 .line {
     line-height: 0vw;
-    font-size: 0;
+    display: flex;
     height: var(--key-width);
     max-height: var(--key-width);
     width: calc(var(--key-width) * 22.5);
-    overflow: visible;
-    border-collapse: collapse;
 }
 
 
 .key {
-    background-image: linear-gradient(to right, #333, #444, #333);
-    /* border-radius: 17%; */
+    background-color: #373737;
     height: var(--key-width);
-    text-align: center;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     font-family: -system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: calc((0.7/3) * var(--key-width));
-    color: #ddd;
-    opacity: 0.7;
-    display: inline-block;
+    color: #bbb;
+    display: inline-flex;
     overflow: hidden;
     cursor: pointer;
-    border: 5px solid #000;
-    box-sizing: border-box;
-    transition: 0.1s;
+    box-sizing: border-box; 
+    box-shadow:
+        0.2vw 0 0 0 black,
+        0 0.2vw 0 0 black,
+        0.2vw 0.2vw 0 0 black,
+        0.2vw 0 0 0 black inset,
+        0 0.2vw 0 0 black inset;
+    transition: 0.05s;
 }
 
-.key > div {
-    line-height: calc(var(--key-width)/2.5);
+.key > * {
+    user-select: none;
+    margin: 0.2vw 0 0 0.2vw;
 }
 
-.key > p {
-    line-height: calc(var(--key-width)/3.5);
+.hover-key {
+    background-color: #404040;
+}
+
+.selected-key {
+    background-color: #494949;
 }
 
 .gap {
@@ -134,7 +140,13 @@ a {
 }
 
 .layout-image {
-    width: 25vw;
+    width: 35vw;
+}
+
+@media(orientation: portrait){
+    .layout-image {
+        width: 65vw;
+    }
 }
 
 .w-_25 {

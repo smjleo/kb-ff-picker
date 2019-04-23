@@ -29,19 +29,19 @@ function return_ff(desired) {
         "images/numpad.png"
     ],
     ["40%",
-        ["esc", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
+        ["esc", "alpha", "caps", "l_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
         0,
         "Vortex Core",
         "images/40.png"
     ],
     ["60%",
-        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
+        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "menu"],
         0,
         "GH60, DZ60, XD60",
         "images/60.png"
     ],
     ["60% - HHKB",
-        ["esc", "topnum", "alpha", "l_ctrl", "l_os", "r_os", "l_alt", "r_alt"],
+        ["esc", "topnum", "alpha", "l_os", "r_os", "l_alt", "r_alt"],
         0,
         "GH60, DZ60, XD60",
         "images/hhkb.png"
@@ -71,7 +71,7 @@ function return_ff(desired) {
         "images/75.png"
     ],
     ["Tenkeyless",
-        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function"],
+        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "menu"],
         0,
         "GMMK TKL",
         "images/tkl.png"
@@ -83,7 +83,7 @@ function return_ff(desired) {
         "images/1800.png"
     ],
     ["Fullsized",
-        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad"],
+        ["esc", "topnum", "alpha", "caps", "l_ctrl", "r_ctrl", "l_os", "r_os", "l_alt", "r_alt", "arrow", "function2", "function", "numpad", "menu"],
         0,
         "GMMK Fullsized",
         "images/fullsized.png"
@@ -103,6 +103,7 @@ function return_ff(desired) {
         "l_alt": 0.25,
         "r_alt": 0.25,
         "arrow": 2,
+        "menu": 0.1
     };
     formfactors.forEach(i => {
         desired.forEach(j => {
@@ -119,5 +120,5 @@ function return_ff(desired) {
         });
     });
     let k = 3; // sensitivity
-    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => formfactors[0][2] - k <= e[2]).filter(e => e[2] >= -2);
+    return formfactors.sort((a, b) => b[2] - a[2]).filter(e => e[2] >= -2).slice(0,3);
 }

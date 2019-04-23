@@ -20,29 +20,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
     groups.forEach((group, i)=>{
         [...document.getElementsByClassName(group)].forEach(el=>{
             el.addEventListener("mouseover", ()=>{
-                setTimeout(()=>{
-                    if(!selected[i]){
-                        [...document.getElementsByClassName(group)].forEach(e=>e.style.backgroundImage = "linear-gradient(to right, #444, #555, #444)");
-                    }
-                }, 00);
+                if(!selected[i]){
+                    [...document.getElementsByClassName(group)].forEach(e=>e.classList.add("hover-key"));
+                }
             });
             el.addEventListener("mouseleave", ()=>{
-                setTimeout(()=>{
-                    if(!selected[i]){
-                        [...document.getElementsByClassName(group)].forEach(e=>e.style.backgroundImage = "linear-gradient(to right, #333, #444, #333)");
-                    }
-                }, 00);
+                if(!selected[i]){
+                    [...document.getElementsByClassName(group)].forEach(e=>e.classList.remove("hover-key"));
+                }
             });
             el.addEventListener("click", ()=>{
                 selected[i] = !selected[i];
                 [...document.getElementsByClassName(group)].forEach(e=>{
                     if(selected[i]){
-                        e.style.backgroundImage = "linear-gradient(to right, #585858, #686868, #585858)";
-                    } else {
-                        e.style.backgroundImage = "linear-gradient(to right, #333, #444, #333)";
+                        e.classList.add("selected-key");
+                    } else if(e.classList.contains("selected-key")){
+                        e.classList.remove("selected-key");
                     }
                 });
-                renderlayouts(groups.filter((e, i)=>selected[i] && e != "menu"));
+                renderlayouts(groups.filter((e, i)=>selected[i]));
             });
         })
     })
